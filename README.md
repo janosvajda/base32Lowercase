@@ -40,6 +40,7 @@ If you want to run the tests, PHPUnit 3.6 or up is required.
 Author
 ------
 
+
 This class based on Christian Riesen's base32 class
 
 https://github.com/ChristianRiesen/base32
