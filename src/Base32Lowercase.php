@@ -17,7 +17,7 @@ namespace Base32Lowercase;
  * @link http://christianriesen.com
  * @license MIT License see LICENSE file
  */
-class Base32
+class Base32Lowercase
 {
     /**
 	 * Table for encoding base32
