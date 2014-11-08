@@ -22,14 +22,16 @@ class Base32LowercaseDecodeTest extends  \PHPUnit_Framework_TestCase{
      * Test special chars
      */
     public function testEncodeSpecialchars(){
-        $this->assertEquals('krsxg5bnfvdestdfjzqwk3lfeusu4vknmjstimzsgexeu4dfm4======', Base32Lowercase::encode('Test--FILeNaeme%%NUMbe4321.Jpeg'));
+        $TestString="AbCDEFGHIJKlMNOpQrSTWXYZ123456789.ABcDEFGHiJK---ABcd**12.12.2014.JPEG";
+        $this->assertEquals($TestString, Base32Lowercase::decode(Base32Lowercase::encode($TestString)));
     }    
     
     /**
-     * Test mixed chars like date and file extension
+     * Test special characters
      */
-    public function testEncodeSpecialcharsWithDate(){
-        $this->assertEquals('ifbegrcfizduqskkjnge2ttpobixeu2uk54fswrnfuzdambrgexdamjogezc4ucom4======', Base32Lowercase::encode('ABCDEFGHIJKLMNopQrSTWxYZ--20011.01.12.PNg'));
+    public function testEncodeSpecialchars2(){
+        $TestString="++==AbCDEFGHIJKlMNOpQrSTWXYZ123456789.ABcDEFGHiJK---ABcd**12.12.20--*/14.JPEG=====";
+        $this->assertEquals($TestString, Base32Lowercase::decode(Base32Lowercase::encode($TestString)));
     }    
 }
 

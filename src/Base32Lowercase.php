@@ -2,21 +2,6 @@
 
 namespace Base32Lowercase;
 
-/**
- * Base32 encoder and decoder
- *
- * Last update: 2012-06-20
- *
- * RFC 4648 compliant
- * @link http://www.ietf.org/rfc/rfc4648.txt
- *
- * Some groundwork based on this class
- * https://github.com/NTICompass/PHP-Base32
- *
- * @author Christian Riesen <chris.riesen@gmail.com>
- * @link http://christianriesen.com
- * @license MIT License see LICENSE file
- */
 class Base32Lowercase
 {
     /**

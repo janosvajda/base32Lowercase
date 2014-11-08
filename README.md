@@ -1,7 +1,7 @@
 base32Lowercase
-======
+===============
 
-lowercased Base32 Encoder/Decoder
+Lowercased Base32 Encoder/Decoder.
 
 Usage
 -----
@@ -9,26 +9,11 @@ Usage
     <?php
 
     // Include class or user autoloader
-    use Base32\Base32Lowercase;
+    use Base32Lowercase\Base32Lowercase;
 
-    $string = 'KjLOKMjHlsksjd-odKKKlsmd.JPeg';
+    $TestString="AbCDEFGHIJKlMNOpQrSTWXYZ123456789.ABcDEFGHiJK---ABcd**12.12.2014.JPEG";
+    $this->assertEquals($TestString, Base32Lowercase::decode(Base32Lowercase::encode($TestString)));
 
-    $encoded = Base32::encode($string);
-    // $encoded contains now 'MZXW6YTB'
-
-    $decoded = Base32::decode($encoded);
-    // $decoded is again 'KjLOKMjHlsksjd-odKKKlsmd.JPeg'
-
-
-About
-=====
-
-Use
----
-
-
-Goal
-----
 
 Requirements
 ------------
