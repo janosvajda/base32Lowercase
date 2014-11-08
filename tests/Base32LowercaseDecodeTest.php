@@ -23,6 +23,7 @@ class Base32LowercaseDecodeTest extends  \PHPUnit_Framework_TestCase{
      */
     public function testEncodeSpecialchars(){
         $TestString="AbCDEFGHIJKlMNOpQrSTWXYZ123456789.ABcDEFGHiJK---ABcd**12.12.2014.JPEG";
+        var_dump(Base32Lowercase::encode($TestString));
         $this->assertEquals($TestString, Base32Lowercase::decode(Base32Lowercase::encode($TestString)));
     }    
     
